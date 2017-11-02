@@ -34,7 +34,7 @@ image = cv2.imread('/Users/huangjintao/Desktop/face/test/test_3.jpg')
 faces = face_patterns.detectMultiScale(image,scaleFactor=1.1,minNeighbors=5,minSize=(100, 100))
 
 
-# 为每个人脸画一个框
+# 为每个人脸画一个框,在原图上框出头像并且截取每个头像到文件夹
 '''
 循环读取人脸的矩形对象列表，获得人脸矩形的坐标和宽高，然后在原图片中画出该矩形框.
 调用的是OpenCV的rectangle 方法，其中矩形框的颜色等是可调整的。
